@@ -17,9 +17,7 @@ var myOptional:Int?
 myOptional = nil
 myOptional = 100
 
-var anotherOptional:Int? = 200
-//ERROR: print(anotherOptional + 1)
-print(anotherOptional)
+var anotherOptional: Int? = 200
 print(anotherOptional! + 1) //unwrap with: "!"
 
 
@@ -30,6 +28,7 @@ print(number!!!)
 
 //Swift includes a feature known as optional binding,
 //which lets you safely access the value inside an optional. You use it like so:
+
 var authorName:String? = "Author"
 if authorName != nil {
     print(authorName!)
@@ -39,9 +38,11 @@ if let unwrappedAuthorName = authorName {
     print(unwrappedAuthorName)
 }
 
+
+
 //-----------> GUARD <-----------//
 func stringNil()->String?{
-    return "hola"
+    return nil
 }
 
 func maybePrintSomething(){

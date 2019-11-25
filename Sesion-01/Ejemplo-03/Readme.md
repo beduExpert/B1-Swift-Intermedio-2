@@ -1,11 +1,10 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-
-## Uso de funcioens de tipo High Ordere
+## Uso de funciones de tipo High Order
 
 ### OBJETIVO
 
-- A utilizar funciones que tienen ventaja en el uso de collections con optionals.
+- A utilizar funciones que tienen ventaja en el uso de collections con **Optionals**.
 
 #### REQUISITOS
 

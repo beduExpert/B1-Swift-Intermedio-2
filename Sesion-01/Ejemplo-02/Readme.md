@@ -1,6 +1,6 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Ejemplo de Property Observer
+## Ejemplo  de Property Observer
 
 ### OBJETIVO
 
@@ -17,7 +17,7 @@ Abrir un nuevo **Playground** e implementar…
 
 1.- Una **Estructura** y un **Enum** donde se manejen los estados de Mario Bros, pequeño y grande.
 
-2.- La estructura debe manejar un **property observer** que en caso de que Mushroom sea True, Mario crezca.
+2.- La estructura debe manejar un **Property Observer** que en caso de que Mushroom sea `True`, Mario crezca.
 
 ```
 // Property Observers
@@ -38,7 +38,7 @@ Probaremos actualizando el valor:
 unlocked = false
 ```
 
-Para manejar los tamaños de Mario, se debe basar en un Enum:
+Para manejar los tamaños de Mario, se debe basar en un **Enum**:
 
 ```
 // Mario example

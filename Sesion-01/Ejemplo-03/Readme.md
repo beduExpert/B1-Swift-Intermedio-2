@@ -1,27 +1,65 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
 
-## Titulo del Ejemplo
+## Uso de funcioens de tipo High Ordere
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- A utilizar funciones que tienen ventaja en el uso de collections con optionals.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Xcode
+2. Playgrounds
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+**PARTE 1:**
 
-<details>
+Abrir un Playground e implementar.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+> let numbers: [Int] = [0, 2, 1, 3, 6, 4, 9, 7, 8]
+> let ascendingNumbers = numbers.sorted()
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+Utilizar la función `sorted()`.
+
+Usar la funión `sorted(by: )` para ordenar los numeros en orden descendente.
+
+```
+let descendingNumbers = numbers.sorted { (a, b) -> Bool in 
+retun a > b
+}
+```
 
 
+**PARTE 2:**
+
+
+1.- Crear un nuevo **Playground** y agregar una colección de elementos. 
+
+Estos elementos deben ser de tipo **Optional**.
+
+2.- Con un **For-Loop** imprimir el valor de cada uno.
+
+3.- Finalmente utilizar `compactMap()` para obtener los valores.
+
+```
+let values: [String?] = [nil, nil, nil, "B","E","D","U"]
+for v in values {
+  print(v)
+}
+
+print("\nFor Each")
+//Second form
+values.forEach {
+  print($0)
+}
+
+print("\nCompact")
+let compacted = values.compactMap { $0 }
+compacted.forEach {
+  print($0)
+}
+```
+
+**Nota**: Implmentar todas la *VARIANTES* en sintaxis de **compactMap()**.

@@ -1,27 +1,34 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+`Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Titulo del Ejemplo
+## Esqueleto de la App
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Crear la App que servirá de partida para el proyecto final.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Xcode 11
+2. Ejemplo-01 terminado
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Completar el Layout.
+Requisitos:
 
-<details>
+1.- Crear un TableView con custom cells.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+2.- Agregar constraints para replicar los tamaños en la vista.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+3.- Asignar iconos.
 
+4.- Al seleccionarauna celda ir a la vista de reproducción.
+
+NOTA: Cuidar el uso de Optionals.
+Property Observers podrian omitirse de momento, pero si se quieren implementar, utilizarlos en el progressbar y labels de tiempo de progreso la canción.
+
+Interfaz sugerida:
+
+![](0.png)
 

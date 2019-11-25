@@ -1,26 +1,32 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-	
-## Titulo del Ejemplo 
+## App inicial para proyecto final
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Crear una maqueta de App para comenzar el desarrollo del proyecto final.
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Xcode 11
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- Crear un nuevo proyecto con Swift y Storyboard.
+
+2.- Implementar una App que tenga dos vistas similares a la mostrada en la imágen.
+
+3.- Los [iconos](icons) estan en el repositorio.
+
+![](0.png)
+
+> Fuente: https://dribbble.com/shots/7945280-Music-Player
 
 <details>
-
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
+        <summary>Solución</summary>
+        <p> Una vez creado el proyecto ir al Storyboard.</p>
+        <p> Agregar dos ViewControllers</p>
+        <p> Al primer ViewController agregarle un TableView con celdas customizadas.</p>
+        <p> Al segundo ViewController agregarle los elementos de UIImageView, UILabels, UIButtons para la reproducción de video y un ProgressBar.</p>
+        <p> Al seleccionar una celda ir a la vista de reproducción de musica.</p>
+</details>

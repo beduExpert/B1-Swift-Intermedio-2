@@ -1,15 +1,26 @@
 `Desarrollo Mobile` > `Swift Intermedio 2` 
 
-## Titulo de la Sesion 
+## Patrones de Diseño
 
 ### OBJETIVOS 
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+- Que el alumno aprenda a utilizar los patrones de diseño mas comunes como lo son MVC, MVP y MVVM. 
 
 #### ORGANIZACION DE LA CLASE 
 
-- Tema que veran en el ejemplo
+- MVC y MVP
 
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
 
+- Delegate Protocol
+
+	- [Ejemplo 02](Ejemplo-02)
+	- [Reto 02](Reto-02)
+
+- MVVM
+
+	- [Ejemplo 03](Ejemplo-03)
+	- [Reto 03](Reto-03)
+
+- Must known Patterns.

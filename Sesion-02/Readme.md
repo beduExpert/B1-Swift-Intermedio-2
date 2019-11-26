@@ -1,15 +1,23 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Titulo de la Sesion 
+## Nib files, Storyboards y Constraints 
 
 ### OBJETIVOS 
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+- Aprender a utilizar Constraints mediante código así como utilizar multiples Storyboards y Xibs.
+- Aprender a utilizar ScrollView y Collection View.
 
 #### ORGANIZACION DE LA CLASE 
 
-- Tema que veran en el ejemplo
+- Nib files, Storyboards y Constraints.
+- Constraints mediante código. 
+- (Alineamiento y Dimensión) TableViews y Custom Cells.
 
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
+
+- Controles básicos: ScrollView, CollectionView,...
+- CollectionView
+- CollectionView con vista de detalle. 
+- ScrollView paginado y page control
 

@@ -2,7 +2,7 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
 
-## Titulo de la Sesion 
+## Protocolos 
 
 ### OBJETIVOS 
 
@@ -15,3 +15,7 @@
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
 
+- Properties, Methods, Optionals 
+- Herencia
+- Protocolos con Estructuras y Clases. 
+- Equatable Protocol

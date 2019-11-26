@@ -1,7 +1,7 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
 
-## Titulo de la Sesion 
+## GCD Grand Central Dispatch
 
 ### OBJETIVOS 
 
@@ -14,3 +14,10 @@
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
 
+- GCD Grand Central Dispatch
+- Introducción al GCD
+- Tareas Asíncronas y Sincrona
+- Threads
+- Main Thread
+- Operations
+- Multiples implementaciones de Concurrencia

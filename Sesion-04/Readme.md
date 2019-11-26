@@ -1,6 +1,6 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Titulo de la Sesion 
+## Closures y Extensiones
 
 ### OBJETIVOS 
 
@@ -13,3 +13,9 @@
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
 
+- Closures
+- Introducción y sintaxis de un Closure.
+- Ciclos y Closures: ForEach.
+- High Order Functions: Mapping.
+- Extensiones
+- Extensiones de UI components Conformando Protocolos

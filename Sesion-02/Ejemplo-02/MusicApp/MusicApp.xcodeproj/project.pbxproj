@@ -22,11 +22,8 @@
 		13DA10E8238EAEE200DA99CC /* PlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13DA10E7238EAEE200DA99CC /* PlayerView.xib */; };
 		13DA10EA238EAFBF00DA99CC /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DA10E9238EAFBF00DA99CC /* PlayerView.swift */; };
 		13DA10ED238EB07000DA99CC /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DA10EC238EB07000DA99CC /* PlayerViewController.swift */; };
-		13DA10EF238EB09100DA99CC /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DA10EE238EB09100DA99CC /* AlbumViewController.swift */; };
 		13DA10F2238EB19600DA99CC /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DA10F0238EB19600DA99CC /* SongCell.swift */; };
 		13DA10F3238EB19600DA99CC /* SongCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13DA10F1238EB19600DA99CC /* SongCell.xib */; };
-		13DA10F7238EB22B00DA99CC /* AlbumSongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DA10F5238EB22B00DA99CC /* AlbumSongTableViewCell.swift */; };
-		13DA10F8238EB22B00DA99CC /* AlbumSongTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13DA10F6238EB22B00DA99CC /* AlbumSongTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,11 +44,8 @@
 		13DA10E7238EAEE200DA99CC /* PlayerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerView.xib; sourceTree = "<group>"; };
 		13DA10E9238EAFBF00DA99CC /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		13DA10EC238EB07000DA99CC /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
-		13DA10EE238EB09100DA99CC /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		13DA10F0238EB19600DA99CC /* SongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
 		13DA10F1238EB19600DA99CC /* SongCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongCell.xib; sourceTree = "<group>"; };
-		13DA10F5238EB22B00DA99CC /* AlbumSongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumSongTableViewCell.swift; sourceTree = "<group>"; };
-		13DA10F6238EB22B00DA99CC /* AlbumSongTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumSongTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +98,6 @@
 			children = (
 				13783113238992F4001A5670 /* ViewController.swift */,
 				13DA10EC238EB07000DA99CC /* PlayerViewController.swift */,
-				13DA10EE238EB09100DA99CC /* AlbumViewController.swift */,
 				13B22970238EBA7B007C8C90 /* PreferencesViewController.swift */,
 			);
 			path = ViewControllers;
@@ -135,8 +128,6 @@
 			children = (
 				13DA10F0238EB19600DA99CC /* SongCell.swift */,
 				13DA10F1238EB19600DA99CC /* SongCell.xib */,
-				13DA10F5238EB22B00DA99CC /* AlbumSongTableViewCell.swift */,
-				13DA10F6238EB22B00DA99CC /* AlbumSongTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -201,7 +192,6 @@
 			files = (
 				1378311C238992F6001A5670 /* LaunchScreen.storyboard in Resources */,
 				13783119238992F6001A5670 /* Assets.xcassets in Resources */,
-				13DA10F8238EB22B00DA99CC /* AlbumSongTableViewCell.xib in Resources */,
 				13DA10F3238EB19600DA99CC /* SongCell.xib in Resources */,
 				139A8E14238E9D2B00862829 /* LoginView.xib in Resources */,
 				13783117238992F4001A5670 /* Main.storyboard in Resources */,
@@ -217,12 +207,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13DA10F7238EB22B00DA99CC /* AlbumSongTableViewCell.swift in Sources */,
 				13783114238992F4001A5670 /* ViewController.swift in Sources */,
 				13783124238994C4001A5670 /* Colors.swift in Sources */,
 				13783110238992F4001A5670 /* AppDelegate.swift in Sources */,
 				13DA10ED238EB07000DA99CC /* PlayerViewController.swift in Sources */,
-				13DA10EF238EB09100DA99CC /* AlbumViewController.swift in Sources */,
 				13DA10EA238EAFBF00DA99CC /* PlayerView.swift in Sources */,
 				139A8E16238E9D3700862829 /* LoginView.swift in Sources */,
 				13DA10F2238EB19600DA99CC /* SongCell.swift in Sources */,

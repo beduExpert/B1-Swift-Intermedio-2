@@ -1,27 +1,32 @@
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+`Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Titulo del Ejemplo
+## Agregando un nuevo Storyboard
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- A agregar nuevos flujos en la app utilizando diferentes storyboards.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Xcode 11.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Agregaremos un nuevo Storyboard, este contendrá vistas nuevas.
 
-<details>
+El flujo a desarrollar es de Preferencias de la App.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+Las opciones pueden ser como las que se muestran.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+![](0.png)
 
+1.- Damos clik derecho sobre los archivos del navigation y agregamos un nuevo archivo de Storyboard...
 
+![](2.png)
+
+2.- Una vez agregado el archivo, creamos el flujo:
+
+![](1.png)
+
+3.- Podemos agregar los Archivos de clase de cada vista.

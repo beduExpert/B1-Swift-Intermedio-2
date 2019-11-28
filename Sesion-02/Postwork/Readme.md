@@ -1,27 +1,32 @@
+`Desarrollo Mobile` > `Swift Intermedio 2`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Conectando dos Storyboards
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Utilizar las vistas creadas en el Storyboard de Preferencias.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Proyecto con Storyboard de preferencias con el flujo creado.
+2. Xcode 11.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- En el proyecto debemos tener el **Storyboard** de `Preferences`.
 
-<details>
+2.- En el **Storyboard** principal `Main`. Cambiaremos el flujo a Navigation.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+![](0.png)
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+3.- Lo mismo con el flujo de `Preferences.storyboard`.
 
+4.- En la vista principal, agregar un botón en la barra de navegación que te lleve al flujo de Preferencias.
 
+Pistas:
+
+```
+let storyboard = AppStoryboard.Preferences.instance
+
+let loginScene = AppStoryboard.Preferences.instance.instantiateViewController(withIdentifier: "PreferenceVC")
+```

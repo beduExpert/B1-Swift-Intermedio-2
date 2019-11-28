@@ -10,14 +10,15 @@
 #### ORGANIZACION DE LA CLASE 
 
 - Nib files, Storyboards y Constraints.
-- Constraints mediante código. 
-- (Alineamiento y Dimensión) TableViews y Custom Cells.
 
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
+	- [Ejemplo 02](Ejemplo-02)
+	- [Reto 02](Reto-02)
 
+- Constraints mediante código. (Alineamiento y Dimensión) TableViews y Custom Cells.
 - Controles básicos: ScrollView, CollectionView,...
-- CollectionView
-- CollectionView con vista de detalle. 
-- ScrollView paginado y page control
+- CollectionView con vista de detalle.
+
+	- [Reto 03](Reto-03)
 

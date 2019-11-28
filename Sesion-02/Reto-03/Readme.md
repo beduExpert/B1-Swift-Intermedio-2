@@ -1,27 +1,37 @@
- 
+`Desarrollo Mobile` > `Swift Intermedio 2`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## CollectionView with DetailView
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Implementar el componente de UICollectionView con vista de detalle, de manera muy generica.
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+0. Nociones de implementación de UITableView.
+1. Xcode 11
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Crear un nuevo proyecto.
+
+En el Viewcontroller agregar un elemento de CollectionView.
+
+![](0.png)
+
+Así como se implementa un TableView, implementar un CollectionView que muestre una celda personalizada.
+
+![](1.png)
+
+Al dar click en la celda, ir a una vista de detalle.
 
 <details>
-
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
+	<summary>Solución</summary>
+	<p> Agregar un UICollectionView al ViewController del Storyboard.</p>
+	<p> Agregar un UICollectionView al ViewController del Storyboard.</p>
 </details> 
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
 
+Resultado esperado:
+
+![](0.gif)

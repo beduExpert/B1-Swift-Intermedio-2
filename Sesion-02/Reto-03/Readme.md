@@ -28,9 +28,10 @@ Al dar click en la celda, ir a una vista de detalle.
 <details>
 	<summary>Solución</summary>
 	<p> Agregar un UICollectionView al ViewController del Storyboard.</p>
-	<p> Agregar un UICollectionView al ViewController del Storyboard.</p>
+	<p> Agregar un nuevo ViewController y su clase, este será el DetailViewController.</p>
+	<p> Crearemos una Cell customizada para CollectionView. Le agregaremos un Label.</p>
+	<p> En el ViewController principal, implementaremos el código similar a un TableView.</p>
 </details> 
-
 
 Resultado esperado:
 

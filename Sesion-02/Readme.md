@@ -16,9 +16,9 @@
 	- [Ejemplo 02](Ejemplo-02)
 	- [Reto 02](Reto-02)
 
-- Constraints mediante código. (Alineamiento y Dimensión) TableViews y Custom Cells.
 - Controles básicos: ScrollView, CollectionView,...
 - CollectionView con vista de detalle.
 
 	- [Reto 03](Reto-03)
 
+- Constraints mediante código. (Alineamiento y Dimensión) TableViews y Custom Cells.

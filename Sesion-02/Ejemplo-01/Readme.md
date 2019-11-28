@@ -1,27 +1,35 @@
+`Desarrollo Mobile` > `Swift Intermedio 2`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Login View XIB
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Implementar una vista mediante XIBs.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Xcode 11
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
 
-<details>
+Con base en el proyecto creado en la Sesión-01, crear una vista de login basándose en XIBs.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+No agregar constraints.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+1.- En el navigator pane, dar click derecho y seleccionar `New File...`. Nombre sugerido para los archivos: `LoginView`.
 
+![](0.png)
+
+2.- De esa manera agregaremos dos archivos, uno de View correspondiente al XIB y uno de clase que será el encargado de interactuar con la vista.
+
+![](2.png)
+
+![](3.png)
+
+3.- En el **XIB** agregado implementar el sig. layout.
+
+![](1.png)
+
+Por supuesto, el `File's Owner` del **XIB** deberá ser de la clase que creamos.
 

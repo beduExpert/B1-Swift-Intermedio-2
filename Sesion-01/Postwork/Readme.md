@@ -14,8 +14,9 @@
 
 #### DESARROLLO
 
-Completar el Layout.
-Requisitos:
+Completar el Layout.  
+
+**Requisitos:**
 
 1.- Crear un TableView con custom cells.
 
@@ -23,10 +24,10 @@ Requisitos:
 
 3.- Asignar iconos.
 
-4.- Al seleccionarauna celda ir a la vista de reproducción.
+4.- Al seleccionar una celda ir a la vista de reproducción.
 
 NOTA: Cuidar el uso de Optionals.
-Property Observers podrian omitirse de momento, pero si se quieren implementar, utilizarlos en el progressbar y labels de tiempo de progreso la canción.
+Property Observers podrían omitirse de momento, pero si se quieren implementar, utilizarlos en el progressbar y labels de tiempo de progreso la canción.
 
 Interfaz sugerida:
 

@@ -4,7 +4,7 @@
 
 ### OBJETIVO
 
-- Implementar una vista mediante XIBs.
+- Implementar una vista mediante **XIBs**.
 
 #### REQUISITOS
 
@@ -12,10 +12,9 @@
 
 #### DESARROLLO
 
+Con base en el proyecto creado en la **Sesión-01**, crear una vista de login basándose en **XIBs**.
 
-Con base en el proyecto creado en la Sesión-01, crear una vista de login basándose en XIBs.
-
-No agregar constraints.
+> No agregar constraints.
 
 1.- En el navigator pane, dar click derecho y seleccionar `New File...`. Nombre sugerido para los archivos: `LoginView`.
 

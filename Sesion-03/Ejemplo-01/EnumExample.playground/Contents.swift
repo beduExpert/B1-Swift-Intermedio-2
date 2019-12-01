@@ -1,27 +1,16 @@
 import UIKit
 
-// An Enum with AssociatedValues
-enum Playable {
-  case success(_ path: String)
-  case error(message: String)
-}
-
-func loadSong() {
-  let file = Bundle.main.path(forResource: "songName", ofType: "mp3")
-  let path = isPlayable(file)
-  if case .success = path {
-    print("puede reproducirse")
-    // perfom play code
-  }
-  if case .error(let msg) = path {
-    print(msg)
+struct Song {
+  let name: String
+  let album: String
+  var timesPlayed: Int = 0
+  
+  mutating func hasBeenPlayed() {
+    timesPlayed += 1
   }
 }
 
-func isPlayable(_ path: String?) -> Playable {
-  guard let path = path else { return .error(message: "Not playable") }
-  return .success(path)
-}
+var song: Song = Song(name: "Perreo", album: "Intenso")
+song.hasBeenPlayed()
+print(song.timesPlayed)
 
-//Testing
-loadSong()

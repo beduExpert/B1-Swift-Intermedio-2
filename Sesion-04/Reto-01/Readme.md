@@ -1,27 +1,60 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
+`Desarrollo Mobile` > `Swift Intermedio 2`
 	
-## Titulo del Ejemplo 
+## Reto closures
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Aprender a implementar closures con Implicit Returns y como Shorthand Arguments.
+
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Xcode 11
+2. Playgrounds.
 
 #### DESARROLLO
 
 Agrega las instrucciones generales del ejemplo o reto
 
 <details>
+	<summary>Solución</summary>
+	<p> 1.- Declaramos una variable en dond el tipo de dato será:</p>
+	
+```
+() -> String
+```
+<p> Dando como resultado: </p>
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
+```
+let myName: () -> String = { () in
+  return "Richie"
+}
+```
+
+<p> 2.- Creamos un closure donde el tipo de dato tendra dos parametros de tipo Int y una variable de retorno de tipo Int también.</p>
+<p> Recordamos que no usaremos Return y usaremos una estructura de tipo Short Hand.</p>
+
+```
+var multiplyClosure: (Int, Int) -> Int = {
+  $0 * $1
+}
+multiplyClosure(3, 5)
+```
+
+<p> 3.- Crearemos un capture list, cada elemento de la lista es un closure.</p>
+
+```
+var captureList = [()->()]()
+
+for value in 0...10 {
+  captureList.append { [value] in
+    print("Value is \(value)")
+  }
+}
+
+captureList[10]()
+```
+
 </details> 
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
 

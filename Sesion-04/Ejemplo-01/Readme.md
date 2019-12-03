@@ -1,27 +1,24 @@
+`Desarrollo Mobile` > `Swift Intermedio 2`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
 
-## Titulo del Ejemplo
+## Closures
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Una vez vista la teoria de los closures, implementar la sintaxis mediante un ejemplo.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Xcode 11.
+2. Playgrounds.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- Comenzamos declarando una función. Esta función debe tener parametros y un valor de retorno.
 
-<details>
+2.- Declarar una variable de tipo closure. Este closure tendra dos parametros y un tipo de retorno.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+3.- Luego implementar el mismo closure, pero sin return y tambien utilizando short hand para no especificar nombres de variables.
 
 
+![](0.png)

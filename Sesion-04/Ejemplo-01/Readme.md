@@ -20,5 +20,4 @@
 
 3.- Luego implementar el mismo closure, pero sin return y tambien utilizando short hand para no especificar nombres de variables.
 
-
 ![](0.png)

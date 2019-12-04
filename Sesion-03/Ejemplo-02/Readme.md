@@ -1,7 +1,7 @@
 
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Titulo del Ejemplo
+## Modelo de canción
 
 ### OBJETIVO
 

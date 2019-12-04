@@ -1,14 +1,15 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Titulo del Ejemplo 
+## Multiples closures y funciones de alto orden
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Reforzar el concepto de closures y acercar al alumno al uso de High order functions a traves del uso de `forEach`.
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Xcode 11
+2. Playgrounds
 
 #### DESARROLLO
 

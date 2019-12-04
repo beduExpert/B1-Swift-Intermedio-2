@@ -1,27 +1,30 @@
+`Desarrollo Mobile` > `Swift Intermedio 2`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Primeros pasos en Completions
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Implementar un completion básico
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Xcode 11
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Con base al completion mostrado, realizar lo siguiente.
 
-<details>
+En el ejemplo 02, crear una variable para almacenar un closure y pasarlo como parámetro a la función. Ya teniendo esto, invocar a dicha función.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+```
+func calculate(_ a: Int, _ b: Int, operation: (Int, Int) -> Int) -> Int {
+  let result = operation(a, b)
+  print(result)
+  return result
+}
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
-
+let add = { (a, b)  -> Int in
+  return a + b
+}
+calculate(3, 4, operation: add)
+```

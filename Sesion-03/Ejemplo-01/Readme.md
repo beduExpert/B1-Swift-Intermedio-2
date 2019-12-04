@@ -4,23 +4,51 @@
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Implementar Enums utilizando Associated Types.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Xcode 11
+2. Playgrounds
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- En un Playground, implementar un **Enum** con `Associated Type`.
 
-<details>
+2.- Este Enum deberá tener el caso de **success** y **error**.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+3.- Por medio de un URL Path asignar el nombre de una canción, si existe, entonces entra al caso de success y si no, entrará al caso de error.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+```
+enum Playable {
+	case success(_ path: String)
+	case error(message: String)
+}
+```
 
+Nos apoyaremos de una función.
+El código final es:
 
+```
+
+enum Playable {
+  case success(_ path: String)
+  case error(message: String)
+}
+
+func loadSong() {
+  let file = Bundle.main.path(forResource: "song", ofType: "mp3")
+  let path = isPlayable(file)
+  if case .success = path {
+    print("puede reproducirse")
+  }
+  if case .error(let msg) = path {
+    print(msg)
+  }
+}
+
+func isPlayable(_ path: String?) -> Playable {
+  guard let path = path else { return .error(message: "not playable")}
+  return .success(path)
+}
+```

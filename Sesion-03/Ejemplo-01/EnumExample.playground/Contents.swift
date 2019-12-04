@@ -1,16 +1,22 @@
 import UIKit
 
-struct Song {
-  let name: String
-  let album: String
-  var timesPlayed: Int = 0
-  
-  mutating func hasBeenPlayed() {
-    timesPlayed += 1
+enum Playable {
+  case success(_ path: String)
+  case error(message: String)
+}
+
+func loadSong() {
+  let file = Bundle.main.path(forResource: "song", ofType: "mp3")
+  let path = isPlayable(file)
+  if case .success = path {
+    print("puede reproducirse")
+  }
+  if case .error(let msg) = path {
+    print(msg)
   }
 }
 
-var song: Song = Song(name: "Perreo", album: "Intenso")
-song.hasBeenPlayed()
-print(song.timesPlayed)
-
+func isPlayable(_ path: String?) -> Playable {
+  guard let path = path else { return .error(message: "not playable")}
+  return .success(path)
+}

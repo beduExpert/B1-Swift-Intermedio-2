@@ -8,14 +8,21 @@
 
 #### ORGANIZACION DE LA CLASE 
 
-- Tema que veran en el ejemplo
+- Enumeraciones
 
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
 
-- Enumeraciones
 - Estructuras
 - Funciones y Estructuras
-- Programación Orientada a Objetos Avanzada Herencia y - Polimorfismo
-- Access Control Code Organization
+
+	- [Ejemplo 02](Ejemplo-02)
+	- [Reto 02](Reto-02)
+
 - Reference Types vs Value Types
+- Programación Orientada a Objetos Avanzada Herencia y - Polimorfismo
+
+	- [Ejemplo 03](Ejemplo-03)
+	- [Reto 03](Reto-03)
+
+- Access Control Code Organization

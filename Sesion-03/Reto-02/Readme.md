@@ -1,25 +1,62 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 	
-## Titulo del Ejemplo 
+## Modelo de canción en Music App
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Agregar un modelo de canción para poder ser utilizado en el proyecto de Music App.
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Xcode 11
+2. Proyecto de Music App de Postwork de la sesión-02 terminado.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- Crear un modelo de **Song** más complejo.
+
+Agregar al modelo:
+
+- Año
+- Foto de portada
+- Path o Url, así como en el ejemplo-01.
+- Género
+
+2.- Crear un Enum de Géneros musicales.
+
+3.- Agregar este modelo a una clase de modelos en el proyecto de **Music App.**
+
+El código de Music App esta en [esta carpeta](src).
 
 <details>
+	<summary>Solución</summary>
+	<p> La enumeración de generos musicales seria de la sig. manera. No esta limitada a un número fijo de generos.</p>
+	
+```
+enum MusicGenre {
+  case Rock
+  case Pop
+  case Jazz
+  case Classical
+  case Electro
+  case Reggea
+}
+```
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
+<p> El modelo de Song incluirá algunas variables de tipo optional, ya que podria o no tener dicha información. </p>
+
+```
+struct Song {
+  let name: String
+  let album: String
+  var timesPlayed: Int = 0
+  let year: String
+  let imageCover: UIImage?
+  let path: URL?
+  
+  mutating func hasBeenPlayed() {
+    timesPlayed += 1
+  }
+}
+```
 </details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-

@@ -1,27 +1,60 @@
+`Desarrollo Mobile` > `Swift Intermedio 2`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
 
-## Titulo del Ejemplo
+## Primeros pasos creando Extensions
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Crear un extensión de String y de UIButton. 
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Xcode 11
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- Crear un archivo de swift para Extensions.
 
-<details>
+2.- Comenzaremos creando un extension para modificar un String.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+3.- El String ingresado deberá cambiar su primera letra a mayúscula
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+4.- Crear un extension de UIButton, comenzamos escribiendola con la palabra reservada `extension` seguido el nombre de la clase o estructura de datos.
+
+5.- Implementamos el codigo.
+
+En este caso se desarrolló en un Playground.
+
+```
+import UIKit
+
+extension String {
+  private func capitalize() -> String {
+    let firstLetter = String(self.prefix(1)).capitalized
+    let restOfString = String(self.dropFirst())
+    return firstLetter + restOfString
+  }
+  
+  mutating func capitalizeFirstLetter() {
+    self = self.capitalize()
+  }
+}
+
+//Use of Extension
+var bedu = "bedu school"
+bedu.capitalizeFirstLetter()
+print(bedu)
 
 
+// UIButton
+extension UIButton {
+  func circled() {
+    self.frame = CGRect(x: self.center.x,
+                         y: self.center.y,
+                         width: self.frame.width/2,
+                         height: self.frame.height/2)
+    self.setTitle("", for: .normal)
+    self.backgroundColor = .clear
+  }
+}
+```

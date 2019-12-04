@@ -1,27 +1,32 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
+ `Desarrollo Mobile` > `Swift Intermedio 2`
 	
-## Titulo del Ejemplo 
+## UIButton Extensions
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Migrar la funcionalidad de un UIButton a un extension.
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Ultimo codigo desarrolado en la Sesión-03 de MusicApp.
+2. Xcode 11
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+En la Sesión-03 se creó una **Subclase** de *UIButton*. Migrarla a un Extension.
+
+1.- En el proyecto de Music App crear un archivo de Swift para **Extensions**.
+
+2.- Agregar extensiones de *UIButton* para los botones de reproducción.
+
+3.- También uno para *UIImageView* que permita mostrar la portada de disco de manera redonda.
+
+**Nice to have:** Agregar un pequeño círculo en el centro para darle forma de CD. a la portada. 
 
 <details>
-
-	<summary>Solucion</summary>
+	<summary>Solución</summary>
 	<p> Agrega aqui la solucion</p>
 	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
 </details> 
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
 

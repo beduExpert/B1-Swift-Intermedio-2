@@ -2,7 +2,7 @@ import UIKit
 
 // 1.- Clsure retornando nombre en string especificando tipo de dato.
 let myName: () -> String = { () in
-  return "Richie"
+  return "Bedu"
 }
 
 // 2.- Escribir

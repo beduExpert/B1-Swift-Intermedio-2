@@ -1,27 +1,28 @@
+`Desarrollo Mobile` > `Swift Intermedio 2`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## Creación de subvistas y Autolayout
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Crear subviews y asignarles orientación, tamaño y relación de posición mediante Autolayout utilizando código y no el Storyboard.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Xcode 11
+2. Playgrounds
+
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- Crear un nuevo proyecto de iOS, con Swift como lenguaje y Storyboards.
 
-<details>
+2.- Vamos al ViewController de nuestra vista principal, agregamos el sig. código.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+![](0.png)
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+3.- Crearemos dos subviews y por medio de autolayout las acomodaremos en la pantalla.
 
+![](1.png)
+
+Es importante notar que el orden de agregar Subviews es importante y tambien la propiedad de `translatesAutoresizingMaskIntoConstraints`.
 

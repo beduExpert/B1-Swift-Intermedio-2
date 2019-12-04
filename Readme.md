@@ -3,7 +3,7 @@
 
 ### OBJETIVO 
 
- - Durante las sesiones se reforzaran los temas mas importantes de Swift, como Optionals, Closures, Prog. orientada a Objetos, manejo de threads, protocolos y arquitectura de software.
+ - Durante las sesiones se reforzarán los temas más importantes de Swift como: Optionals, Closures, Prog. orientada a Objetos, manejo de threads, protocolos y arquitectura de software.
 
 ### ORGANIZACIÓN DE MÓDULO 
  

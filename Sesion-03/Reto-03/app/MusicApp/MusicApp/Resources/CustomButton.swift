@@ -20,4 +20,18 @@ class PlayerButton: UIButton {
     self.tintColor = greenSelectedCell
   }
   
+  func performTwoStateSelection() {
+    self.isPlaying = !isPlaying
+    print(isPlaying)
+    self.setImage(isPlaying ? icon : secondIcon, for: .normal)
+    self.setImage(isPlaying ? icon : secondIcon, for: .highlighted)
+  }
+  
+  func setImage(icon: UIImage?) {
+    guard let icon = icon else { return }
+    self.icon = icon
+    self.setImage(icon, for: .normal)
+    self.setImage(icon, for: .highlighted)
+  }
+  
 }

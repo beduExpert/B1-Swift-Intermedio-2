@@ -28,12 +28,11 @@ class PlayerViewController: UIViewController {
     self.progressSongTime.textColor = .white
     
     //setup buttons
-    btnPlay.backgroundColor = .clear
+    btnPlay.setImage(icon: UIImage(named: "Play"))
+    btnPlay.secondIcon = UIImage(named: "Pause")
+    
     btnPrev.backgroundColor = .clear
     btnNext.backgroundColor = .clear
-    
-    btnPlay.setImage(UIImage(named: "Play"), for: .normal)
-    btnPlay.setImage(UIImage(named: "Play"), for: .highlighted)
     
     btnPrev.setImage(UIImage(named: "Previous"), for: .normal)
     btnPrev.setImage(UIImage(named: "Previous"), for: .highlighted)
@@ -50,7 +49,7 @@ class PlayerViewController: UIViewController {
   }
   
   @IBAction func playPause(_ sender: Any) {
-    
+    btnPlay.performTwoStateSelection()
   }
   
   @IBAction func next(_ sender: Any) {

@@ -1,27 +1,23 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
 
-## Titulo del Ejemplo
+## Mejorar el Extension de UIButton
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Unificar código de clases con extensions para hacer una implementación mas generica.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Xcode 11
+2. Proyecto del Reto-03
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Se tiene el proyecto de MusicApp con una clase llamada  `PlayerButton`.
 
-<details>
+Esta clase se encarga de personalizar el botón de play, next y previous.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+Por otra parte tenemos el Highlight que cambia de color si es presionado el botón, pero esta en un Extension directamente en el UIButton.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
-
+Este postwork consiste hacer que el extension de UIButton tenga toda la implementación necesaria para no depender del uso de la clase PlayerButton, a tal grado de poder eliminar dicha clase.

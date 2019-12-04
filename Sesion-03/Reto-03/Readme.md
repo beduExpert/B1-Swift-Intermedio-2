@@ -1,25 +1,37 @@
  `Desarrollo Mobile` > `Swift Intermedio 2`
 	
-## Titulo del Ejemplo 
+## Subclase de UIButton.
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Crear una clase que herede de UIButton.
+- Agregar dicha clase al proyecto de Music App.
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Postwork de la sesión-02, se utilizará el proyecto de MusicApp.
+2. Xcode 11
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- En el proyecto de **Music App**, crear una clase que herede de **UIButton**.
+
+2.- Esta clase se encargará de ser aquella en manejar los estados de **Play**, **Pause**, **Next** y **Previous**.
+Cada uno de estos estados de reproducción deberán estar en un **Enum**.
+
+3.- La subclase deberá tener las sig. características:
+
+- Un ícono de acuerdo al tipo de botón. Ya sea icono de Play, Pause, Next,...
+
+- Un property que indique que la canción está en reproducción.
+
+- Cuando la canción esté en Reproducción, cambiar el icono a Pausa y viceversa. 
+
+- Crear un Button redondo, sin texto y con fondo transparente o de color.
+
+- Los botones previamente creados deben ser reemplazados con esta clase y su funcionamiento debe ser similar.
 
 <details>
-
-	<summary>Solucion</summary>
+	<summary>Solución</summary>
 	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
 </details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-

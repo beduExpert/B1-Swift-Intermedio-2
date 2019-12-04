@@ -4,7 +4,7 @@
 
 ### OBJETIVOS 
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+- Profundizar en los conceptos de Enumeraciones, Estructuras y Clases aplicando nuevos conceptos.
 
 #### ORGANIZACION DE LA CLASE 
 

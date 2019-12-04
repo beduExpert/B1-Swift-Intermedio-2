@@ -1,10 +1,10 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Titulo del Ejemplo
+## Nuevo feature para subclase de UIButton
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Implementar una nueva funcionalidad de la clase utilizando property observers
 
 #### REQUISITOS
 
@@ -12,15 +12,14 @@
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Se proporciona un código de ayuda, ver clase `HighlightButton`.
 
-<details>
+De la clase de UIButton creada, implementar una funcionalidad de Highlight.
+Es decir, al presionar un button se debe mostrar un color distinto, este color deberá coincidir con el utilizado en las celdas de la vista principal.
+Como el button es redondo, debería aparecer el highlight redondo.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+
+
 
 

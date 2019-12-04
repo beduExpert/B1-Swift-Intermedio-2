@@ -21,13 +21,13 @@ Cada uno de estos estados de reproducción deberán estar en un **Enum**.
 
 3.- La subclase deberá tener las sig. características:
 
-- Un ícono de acuerdo al tipo de botón. Ya sea icono de Play, Pause, Next,...
+- Una variable para almacenar el ícono de acuerdo al tipo de botón. Ya sea icono de `Play`, `Pause`, `Next`,...
 
-- Un property que indique que la canción está en reproducción.
+- Un *property* que indique si la canción está en reproducción.
 
-- Cuando la canción esté en Reproducción, cambiar el icono a Pausa y viceversa. 
+- Cuando la canción esté en Reproducción, cambiar el **icono** a Pausa y viceversa. 
 
-- Crear un Button redondo, sin texto y con fondo transparente o de color.
+- Crear un Button **redondo**, sin texto y con fondo transparente o de color.
 
 - Los botones previamente creados deben ser reemplazados con esta clase y su funcionamiento debe ser similar.
 

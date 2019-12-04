@@ -15,7 +15,7 @@ class PlayerViewController: UIViewController {
   @IBOutlet weak var progressBar: UIProgressView!
   @IBOutlet weak var totalSongTime: UILabel!
   @IBOutlet weak var progressSongTime: UILabel!
-  @IBOutlet weak var btnPlay: UIButton!
+  @IBOutlet weak var btnPlay: PlayerButton!
   @IBOutlet weak var btnPrev: UIButton!
   @IBOutlet weak var btnNext: UIButton!
   

@@ -106,7 +106,7 @@
                                     <action selector="previous:" destination="xho-B4-ZSv" eventType="touchUpInside" id="6d9-GA-E6z"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mP-lQ-aTV">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mP-lQ-aTV" customClass="PlayerButton" customModule="MusicApp" customModuleProvider="target">
                                 <rect key="frame" x="132" y="509" width="150" height="150"/>
                                 <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>

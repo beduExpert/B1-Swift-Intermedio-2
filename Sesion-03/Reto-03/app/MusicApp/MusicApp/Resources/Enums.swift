@@ -18,5 +18,9 @@ enum Storyboards: String {
   }
 }
 
-// UIBUTTON.
-
+enum PlayerStates {
+  case play
+  case pause
+  case next
+  case previous
+}

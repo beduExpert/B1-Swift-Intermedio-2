@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		132191C023985111006D7334 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132191BF23985111006D7334 /* CustomButton.swift */; };
+		1335DCAB2398691400F10DAC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1335DCAA2398691400F10DAC /* Extensions.swift */; };
 		13783110238992F4001A5670 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1378310F238992F4001A5670 /* AppDelegate.swift */; };
 		13783112238992F4001A5670 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13783111238992F4001A5670 /* SceneDelegate.swift */; };
 		13783114238992F4001A5670 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13783113238992F4001A5670 /* ViewController.swift */; };
@@ -31,7 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		132191BF23985111006D7334 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		1335DCAA2398691400F10DAC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1378310C238992F4001A5670 /* MusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1378310F238992F4001A5670 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13783111238992F4001A5670 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 			children = (
 				13783123238994C4001A5670 /* Colors.swift */,
 				13B2296A238EB9E7007C8C90 /* Enums.swift */,
-				132191BF23985111006D7334 /* CustomButton.swift */,
+				1335DCAA2398691400F10DAC /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -220,7 +220,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				132191C023985111006D7334 /* CustomButton.swift in Sources */,
 				13DA10F7238EB22B00DA99CC /* AlbumSongTableViewCell.swift in Sources */,
 				13783114238992F4001A5670 /* ViewController.swift in Sources */,
 				13783124238994C4001A5670 /* Colors.swift in Sources */,
@@ -233,6 +232,7 @@
 				13783112238992F4001A5670 /* SceneDelegate.swift in Sources */,
 				13B2296B238EB9E7007C8C90 /* Enums.swift in Sources */,
 				13B22971238EBA7B007C8C90 /* PreferencesViewController.swift in Sources */,
+				1335DCAB2398691400F10DAC /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,8 +25,38 @@ En la Sesión-03 se creó una **Subclase** de *UIButton*. Migrarla a un Extensio
 
 <details>
 	<summary>Solución</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
+	<p> Crear un archivo Extensions en el proyecto de Music App.</p>
+	<p>La clase de PlayerButton mantendra solo los properties</p>
+	<p>Crearemos un extension en esta clase</p>
+```
+class PlayerButton: UIButton {
+  var icon: UIImage?
+  var secondIcon: UIImage?
+  var isPlaying: Bool = false
+}
+```
+<p>Luego creamos un extension sobre UIButton.</p>
+
+```
+
+extension UIButton {
+  override open var isHighlighted: Bool {
+    get {
+      return super.isHighlighted
+    }
+    set {
+      if newValue {
+        backgroundColor = greenSelectedCell
+      }
+      else {
+        backgroundColor = .black
+      }
+      super.isHighlighted = newValue
+    }
+  }
+}
+```
+
 </details> 
 
 

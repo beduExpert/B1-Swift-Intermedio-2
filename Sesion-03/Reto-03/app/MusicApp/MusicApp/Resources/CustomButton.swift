@@ -16,7 +16,7 @@ class PlayerButton: UIButton {
     super.draw(rect)
     self.layer.cornerRadius = self.frame.width/2
     self.clipsToBounds = true
-    self.backgroundColor = .red
+    self.backgroundColor = .clear
     self.tintColor = greenSelectedCell
   }
   

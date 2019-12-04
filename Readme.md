@@ -1,8 +1,9 @@
  
-## Módulo: Nombre del modulo
+## Swift Intermedio 2
 
 ### OBJETIVO 
- - Agrega lo que van a aprender en el modulo
+
+ - Durante las sesiones se reforzaran los temas mas importantes de Swift, como Optionals, Closures, Prog. orientada a Objetos, manejo de threads, protocolos y arquitectura de software.
 
 ### ORGANIZACIÓN DE MÓDULO 
  

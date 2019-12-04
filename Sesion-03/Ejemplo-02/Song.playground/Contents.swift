@@ -1,9 +1,10 @@
+
+// Sesion-03, Ejemplo-02
 import AVFoundation
 
 struct Song {
   let name: String
   let album: String
-  let year: String
   var timesPlayed: Int = 0
   
   mutating func hasBeenPlayed() {

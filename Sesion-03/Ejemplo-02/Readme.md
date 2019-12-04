@@ -5,23 +5,37 @@
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Crear una Estructura para una Canción.
+
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Xcode 11
+2. Playgrounds
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- Crear una estructura con los datos de una canción.
 
-<details>
+2.- Con mutating estableceremos cuantas veces se ha reproducido. Iremos actualizando la variable `timesPlayed`.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+```
+// Sesion-03, Ejemplo-02
+import AVFoundation
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+struct Song {
+  let name: String
+  let album: String
+  var timesPlayed: Int = 0
+  
+  mutating func hasBeenPlayed() {
+    timesPlayed += 1
+  }
+}
 
+var song: Song = Song(name: "Song name",
+                      album: "Rock band")
+song.hasBeenPlayed()
+print(song.timesPlayed)
+```
 

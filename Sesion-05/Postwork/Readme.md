@@ -4,23 +4,20 @@
 
 ### OBJETIVO
 
-- 
+- Con lo aprendido en clase, implementar mutabilidad y protocolos.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Reto-03 terminado.
+2. Playgrounds
+3. Ultimo Proyecto de Music App.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Con base al Reto-03, crearemos un protocolo con los parámetros que ya tenemos en la estructura: `struct Song`.
 
-<details>
+![](0.png)
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+Además agregar una función de tipo mutating que permita cambiar el valor de un objeto de esta estructura para saber si la canción está en reproducción o no.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
-
+Al finalizar este código, agregarlo al proyecto de MusicApp en el archivo de Models.

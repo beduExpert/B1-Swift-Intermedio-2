@@ -1,21 +1,31 @@
 
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-
 ## Protocolos 
 
 ### OBJETIVOS 
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+- Entender los diferentes conceptos relacionados con la Prog. Orientada a Protocolos.
+
+- Implementar diferentes estructuras, enums y clases utilizando protocol conformance y herencia.
+
 
 #### ORGANIZACION DE LA CLASE 
 
-- Tema que veran en el ejemplo
+- Properties, Methods, Optionals 
 
-	- [Ejemplo 01](Ejemplo-01)
+ 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
 
-- Properties, Methods, Optionals 
 - Herencia
-- Protocolos con Estructuras y Clases. 
-- Equatable Protocol
+
+	- [Ejemplo 02](Ejemplo-02)
+	- [Reto 02](Reto-02)
+
+- Protocolos con Estructuras y Clases. Extensions.
+
+	- [Ejemplo 03](Ejemplo-03)
+
+- Equatable Protocol.
+
+	- [Reto 03](Reto-03)

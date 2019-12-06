@@ -61,3 +61,13 @@ struct Chocolate: HotDrink {
   var taste: Taste
   var temperature: TemperatureType
 }
+
+
+let beer: Beer = Beer(type: .dark, name: "Corona", volume: 355.5, alcoholPercentage: 6)
+let coca: Soda = Soda(name: "Coca cola", volume: 350)
+let capuccino: Coffee = Coffee(name: "Capuccino", volume: 250, taste: .bitter, temperature: .hot)
+
+var beverages: [Beverage] = []
+beverages.append(beer)
+beverages.append(coca)
+beverages.append(capuccino)

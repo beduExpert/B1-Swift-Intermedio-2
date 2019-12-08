@@ -1,26 +1,54 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Titulo del Ejemplo
+## Enums y Protocols
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Aprender a conformar protocolos con enums.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Xcode 11
+2. Playgrounds.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Definimos un protocolo con una función utilizando mutating.
 
-<details>
+```
+protocol Playable {
+  mutating func play()
+}
+```
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+Implementar el protocolo `Playable`.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+Crear un `Enum` que cambie el estado de play a stop y viceversa.
+
+Esto dentro de la función `play()`.
+
+```
+enum Song: Playable {
+  case play, stop
+  mutating func play() {
+    switch self {
+    case .play:
+      print("is playing")
+      self = .stop
+    default:
+      print("is stopped")
+      self = .play
+    }
+  }
+}
+```
+
+Creamos una instancia y probamos el funcionamiento.
+
+```
+// Instancia
+var sss = Song.play
+sss.play()
+```
 
 

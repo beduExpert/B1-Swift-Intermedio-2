@@ -1,12 +1,10 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
+`Desarrollo Mobile` > `Swift Intermedio 2`
 	
-## Titulo del Ejemplo 
+## Protocols, Mutating y Structs
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+-  Migrar la funcionalidad del `Enum` a un `Struct` que conforme el protocolo `Playable`.
 
 #### REQUISITOS 
 
@@ -14,14 +12,39 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Migrar la funcionalidad del Enum a un Struct que conforme el
+protocolo Playable.
+
+![](0.png)
+
+Crear un `Struct` que replique la misma funcionalidad que el Enum.
+
+Debe conformar el protocolo `Playable`.
 
 <details>
-
-	<summary>Solucion</summary>
+	<summary>Solución</summary>
 	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
+	<p> Al crear una estructura, conformaremos el Protocolo Playable.</p>
+	```
+	struct Song: Playable {
+	}
+	```
+	<p> Replicamos la logica, algo similar, basicamente es poder cambiar un valor de un property existente en la estructura. </p>
+
+```
+struct Song: Playable {
+  var isPlaying: Bool
+  mutating func play() {
+    self.isPlaying = !isPlaying
+  }
+}
+```
+
+<p> Al crear una instancia probamos que efectivamente se cambie el valor. </p>
+
+```
+var s = Song(isPlaying: true)
+s.play()
+s.isPlaying
+```
 </details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-

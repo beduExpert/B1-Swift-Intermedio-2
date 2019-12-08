@@ -24,4 +24,6 @@ struct Song: Playable {
   }
 }
 
-
+var s = Song(isPlaying: true)
+s.play()
+s.isPlaying

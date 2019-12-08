@@ -23,7 +23,6 @@ Debe conformar el protocolo `Playable`.
 
 <details>
 	<summary>Solución</summary>
-	<p> Agrega aqui la solucion</p>
 	<p> Al crear una estructura, conformaremos el Protocolo Playable.</p>
 	```
 	struct Song: Playable {

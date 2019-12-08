@@ -1,6 +1,6 @@
  
+`Desarrollo Mobile` > `Swift Intermedio 2`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
 	
 ## Titulo del Ejemplo 
 
@@ -14,14 +14,66 @@ agrega el programa que se desarrollara con backticks> [agrega la sesion con back
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+De acuerdo al sig. protocolo, definir una estructura que lo conforme y además crear un objeto que implemente cada una de las funciones del protocolo.
+
+```
+protocol Actions {
+  func songInfo() -> String
+  func play()
+  func stop()
+  func nextSong()
+  func previousSong()
+  func playList(_ list: String...)
+  static func loadSong()
+}
+```
 
 <details>
+	<summary>Solución</summary>
+	<p> Creamos una estructura que conforme al protocolo Actions, Xcode automáticamente solicitará implementar los métodos previamente definidos.</p>
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
+```
+struct Media: Actions {
+  func songInfo() -> String {
+    return "song name"
+  }
+  
+  func play() {
+    print(" play song")
+  }
+  
+  func stop() {
+    print(" stop song")
+  }
+  
+  func nextSong() {
+    print(" next song")
+  }
+  
+  func previousSong() {
+    print(" prev song")
+  }
+  
+  func playList(_ list: String...) {
+    for song in list {
+      print(" now playing \(song)")
+    }
+  }
+  
+  static func loadSong() {
+    print(#function)
+  }
+}
+```
+
+<p>En el caso de una función con varadic parameters, utilizar un For-Loop.</p>
+
+```
+  func playList(_ list: String...) {
+    for song in list {
+      print(" now playing \(song)")
+    }
+  }
+```
 </details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
 

@@ -1,6 +1,6 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Titulo del Ejemplo
+## Extensions y Protocols
 
 ### OBJETIVO
 

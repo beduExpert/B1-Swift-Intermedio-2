@@ -1,27 +1,29 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
+`Desarrollo Mobile` > `Swift Intermedio 2`
 	
-## Titulo del Ejemplo 
+## Equatable Protocol
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+-  Comprender la funcionalidad y características del Equatable Protocol. 
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Xcode 11 
+2. Playground
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Definir un struct para una canción, agregarlo al proyecto de `MusicApp`.
 
-<details>
+Este struct debe implementar el `Equatable` protocol.
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+1.- Crear un modelo de `Song` que permita comparar si dos canciones son iguales.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+2.- Las propiedades a comparar en el método de `Equatable` son:
+
+- Name (strings)
+- Artist
+- Álbum
+- Year (int)
+- Song duration (float)
 

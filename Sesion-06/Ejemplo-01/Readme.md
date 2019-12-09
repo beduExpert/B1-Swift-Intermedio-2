@@ -1,27 +1,34 @@
+`Desarrollo Mobile` > `Swift Intermedio 2`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
 
-## Titulo del Ejemplo
+## Hola mundo Queues
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Comprender la importancia del `Quality of Service` en queues.
+
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Playgrounds
+2. Xcode 11
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Se realizará un experimiento donde se pueden comparar dos procesos simultaneos.
 
-<details>
+Crear un `queue` con un `QoS` definido.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+1.- Probar con todos los `QoS` previamente vistos en las diapositivas.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+![](0.png)
 
+![](1.png)
 
+2.- Ver el *Output* en la consola y comparar resultados.
+
+3.- Comenzamos creando un `queue` con un `QoS` en *userInteractive*. 
+
+4.- Ir variando su valor hasta llegar a *backgound* para ir viendo cómo se ejecuta el código.
+
+5.- El queue se ejecutará tanto como **síncrono** como **asíncrono**.

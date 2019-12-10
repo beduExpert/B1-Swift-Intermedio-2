@@ -1,27 +1,30 @@
+`Desarrollo Mobile` > `Swift Intermedio 2`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
-
-## Titulo del Ejemplo
+## App que descarga imagen de internet
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Crear una app que permita visualizar una imagen de internet en un UIImageView.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Xcode 11
+2. Conectividad a internet.
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Crearemos una pequeña app que permite descargar una imagen de internet y mostrarla en un ImageView.
 
-<details>
+1.- Comenzamos creando un proyecto en Xcode con Swift y Playgrounds como configuración inicial.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+2.- Vamos al `Storyboard`, agregamos un `UIImageView` y conectamos el `IBOutlet` con la clase de su ViewController.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+3.- Vamos al `ViewController` e implementamos la funcion a continuación, incluyendo la `URL` de la imagen que se desee mostrar.
 
+![](0.png)
 
+La imagen no se mostrará por si sola, la funcion agregarla al viewDidLoad y ademas necesitamos agregar la sig. configuración al proyecto.
+
+![](1.png)
+
+Listo, el proyecto deberia poder mostrar la imagen.

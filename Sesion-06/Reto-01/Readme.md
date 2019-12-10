@@ -1,6 +1,5 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-
 ## Reto de tasks y concurrencia
 
 ### OBJETIVO 

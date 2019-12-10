@@ -1,27 +1,51 @@
+`Desarrollo Mobile` > `Swift Intermedio 2`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
 
-## Titulo del Ejemplo
+## Multipes Operations
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+-  Crear un simple operation que ejecute un print. Luego, crear una serie de operations.
+
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Xcode 11
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- Crearemos un simple operation que ejecute un print.
+2.- Implementar en un Playground.
 
-<details>
+```
+// Operation via block
+let operation = BlockOperation {
+  print("some process")
+}
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+// Function that handles operation to start
+func operationQueue() {
+  operation.start()
+}
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+//Execute
+operationQueue()
+```
 
+3.- La serie de Operations a crear consiste en dividir un String en substrings, se utilizará un execution block para imprimir cada substring.
 
+```
+func operationStrQueue() {
+  let str = "Hello world swift"
+  let operation = BlockOperation()
+
+  for string in str.split(separator: " ") {
+    operation.addExecutionBlock {
+      print(string)
+    }
+  }
+  operation.start()
+}
+
+operationStrQueue()
+```

@@ -1,27 +1,23 @@
+`Desarrollo Mobile` > `Swift Intermedio 2`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
 
-## Titulo del Ejemplo
+## Mejoras en el uso de Queues y Tasks
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Mejorar la app, utilizar Operations o DispatchQueues para implementar una mejora en la barra de progreso.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Xcode 11
+2. Proyecto Music App
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Con base en el Reto-03, donde se creó un DispatchQueue para mostrar el avance de la barra de progreso.
 
-<details>
+Implementar:
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+-	Un Operation o DispatchQueue que permita llenar la barra de progreso y ademas, mostrar un aumento en el valor del contador numerico de segundos, este ultimo es opcional.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
-
+- Al presionar nuevamente sobre el botón play, debe reiniciar el queue y volver a mostrar que se esta llenando la barra. Esto cada vez que se presione el boton play.

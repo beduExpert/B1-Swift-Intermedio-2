@@ -5,19 +5,33 @@
 
 ### OBJETIVOS 
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+- Entender los conceptos de procesos paralelos, sincronos y asincronos.
+
+- Implementar procesos en el background mediante el uso de GCD.
+
 
 #### ORGANIZACION DE LA CLASE 
 
-- Tema que veran en el ejemplo
+- Introducción al GCD
+- GCD Grand Central Dispatch
+- Tareas Asíncronas y Sincrona
+- DispatchQueues y Threads
+- Main Thread
 
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
 
-- GCD Grand Central Dispatch
-- Introducción al GCD
-- Tareas Asíncronas y Sincrona
-- Threads
-- Main Thread
 - Operations
+
+	- [Ejemplo 02](Ejemplo-02)
+	- [Reto 02](Reto-02)
+
 - Multiples implementaciones de Concurrencia
+
+	- [Ejemplo 03](Ejemplo-03)
+	- [Reto 03](Reto-03)
+
+	
+#### Postwork
+
+[Postwork](Postwork)

@@ -60,8 +60,7 @@ let task = session.dataTask(with: url) { data, response, error in
     }
   
     // serialise the data / NSData object into Dictionary [String : Any]
-    guard let json = (try? JSONSerialization.jsonObject(with: content,
-                                                        options: JSONSerialization.ReadingOptions.mutableContainers)) as? [String: Any] else {
+    guard let json = (try? JSONSerialization.jsonObject(with: content)) as? [String: Any] else {
         print("Not containing JSON")
         return
     }

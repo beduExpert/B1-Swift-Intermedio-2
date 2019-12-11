@@ -15,6 +15,9 @@
 
 Agrega las instrucciones generales del ejemplo o reto
 
+> https://gist.githubusercontent.com/richimf/0d18f9ba3e028fca677b39949fd92185/raw/c9b355b816864d3aa79bcacb93493a6608d841b8/file.json
+
+
 <details>
 
 	<summary>Solucion</summary>

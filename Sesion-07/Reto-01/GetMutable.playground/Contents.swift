@@ -3,7 +3,7 @@ import UIKit
 let config = URLSessionConfiguration.default
 let session = URLSession(configuration: config)
 
-let url = URL(string: "https://gist.githubusercontent.com/richimf/bcee461c944cf02ec751772c1e005f4c/raw/c5616f6dc539aa90c91946f5e203588653c921ce/users.json")!
+let url = URL(string: "https://gist.githubusercontent.com/richimf/0d18f9ba3e028fca677b39949fd92185/raw/c9b355b816864d3aa79bcacb93493a6608d841b8/file.json")!
 let task = session.dataTask(with: url) { data, response, error in
 
     // ensure there is no error for this HTTP response
@@ -19,8 +19,8 @@ let task = session.dataTask(with: url) { data, response, error in
     }
   
     // serialise the data / NSData object into Dictionary [String : Any]
-    guard let json = (try? JSONSerialization.jsonObject(with: content))
-    as? [String: Any] else {
+    guard let json = (try? JSONSerialization.jsonObject(with: content,
+                                                        options: JSONSerialization.ReadingOptions.mutableContainers)) as? [String: Any] else {
         print("Not containing JSON")
         return
     }
@@ -31,6 +31,3 @@ let task = session.dataTask(with: url) { data, response, error in
 
 // execute the HTTP request
 task.resume()
-
-
-

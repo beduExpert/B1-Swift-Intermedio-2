@@ -1,11 +1,8 @@
 import UIKit
 
 let config = URLSessionConfiguration.default
-
 let session = URLSession(configuration: config)
-
-let url = URL(string: "https://httpbin.org/anything")!
-
+let url = URL(string: "https://....")!
 
 var request = URLRequest(url: url)
 request.httpMethod = "POST"
@@ -14,15 +11,13 @@ request.setValue("application/json", forHTTPHeaderField: "Content-Type")
 // your post request data
 let postDict : [String: Any] = ["name": "Bedu",
                                 "favorite_animal": "Chihuahua"]
-
-func postdata() {
+func generateBody() {
   guard let postData = try? JSONSerialization.data(withJSONObject: postDict, options: []) else {
     return
   }
   
   request.httpBody = postData
 }
-postdata()
 
 let task = session.dataTask(with: request) { data, response, error in
   
@@ -49,6 +44,7 @@ let task = session.dataTask(with: request) { data, response, error in
 }
 
 // execute the HTTP request
+generateBody()
 task.resume()
 
 

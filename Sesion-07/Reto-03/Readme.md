@@ -2,26 +2,35 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
 	
-## Titulo del Ejemplo 
+## Proyeco Music App
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Implementar un GET request para poblar la lista de canciones.
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Ultimo proyecto de music app, ver carpeta [starter](starter).
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Configurar AppTransportSecurity especificando los dominios permitidos.
+
+Crear modelos basados en Structs que conformen el protocolo Decodable.
+
+El JSON Response debe utilizar estas estructuras.
+
+Hacer un GET Request qué poble la lista de canciones (tableView) del proyecto de Music App.
+
+Debe utilizar DispatchQueues.
+
+Debe especificar el dominio permitido en AppTransportSecurity.
+
+Al seleccionar la cancion, la información debe aparecer en la vista de reproducción.
 
 <details>
-
-	<summary>Solucion</summary>
+	<summary>Solución</summary>
 	<p> Agrega aqui la solucion</p>
 	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
 </details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
 

@@ -1,27 +1,34 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
 
-## Titulo del Ejemplo
+## Music App
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Poner a punto el proyecto de Music app, tener los puntos implementados para la sesión final.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Último proyecto de music app.
+2. Xcode 11
+3. Conectividad a Internet
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Hacer una revisión del proyecto de **Music App** el cual debe contener lo siguiente:
 
-<details>
+- La vista principal de la Lista de Canciones:
+	
+	- Debe realizar un GET request el cual poble las celdas.
+	- Este GET request debe basar su response en un objeto mediante Structs y Decodable.
+	
+- La vista de reproducción de música:
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+	- Debe mostrar el avance del progress bar al dar click en el botón de play.
+	- El estilo del botón de play debe cambiar de color al ser seleccionado.
+	- La imagen del CD o Cover del Álbum debe mostrarse realizando un HTTP Request.
 
 
+#### Generalidades:
+
+El proyecto debe tener su código en su mayoría en el `ViewController`.

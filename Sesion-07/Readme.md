@@ -1,22 +1,21 @@
 
 `Desarrollo Mobile` > `Swift Intermedio 2`
  
-
 ## Consumo de servicios Rest con URL Session
 
 ### OBJETIVOS 
 
-- Lo que esperamos que el alumno aprenda al finalizar la sesion 
+- Crear código en swift que permite subir y descargar contenido, principalmente consumo de `JSON` mediante `HTTP requests`.
+
+- Crear objetos basados en estructuras que conformen el Protocolo `Decodable`.
+
+- Entender el uso de operaciones `Get` y `Post`.
+
 
 #### ORGANIZACION DE LA CLASE 
 
-- Tema que veran en el ejemplo
-
-	- [Ejemplo 01](Ejemplo-01)
-	- [Reto 01](Reto-01)
-
 - Consumo de servicios Rest con URL Session
--  Introducción a HTTP Rest
+- Introducción a HTTP Rest
 - Que es GET, POST, PUT
 - Configurando un proyecto de Xcode.
 - Librerías nativas para servicios Rest de Swift. 

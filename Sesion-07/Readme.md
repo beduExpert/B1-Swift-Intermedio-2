@@ -17,7 +17,7 @@
 - Consumo de servicios Rest con URL Session
 - Introducción a HTTP Rest
 - Que es GET, POST, PUT
-- Configurando un proyecto de Xcode.
 - Librerías nativas para servicios Rest de Swift. 
 - Implementando un GET request y Closures. 
 - Implementando un POST request y Closures.
+- Configurando un proyecto de Xcode.

@@ -1,26 +1,74 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
-## Titulo del Ejemplo
+## Post Request
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Desarrollo de un POST request con URLSession.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Xcode 11
+2. Playgrounds
+3. Conectividad a Internet
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Similar a nuestro `GET` request del `Ejemplo-01`, realizaremos un `POST` request.
 
-<details>
+Recuerda especificar el método:
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+```
+var request = URLRequest(url: url)
+request.httpMethod = "POST"
+```
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+Creamos el body de los datos a enviar:
+
+```
+let postDict : [String: Any] = ["name": "Bedu",
+                                "favorite_animal": "Chihuahua"]
+                                
+func generateBody() {
+	guard let postData = try? JSONSerialization.data(withJSONObject: postDict, options: []) else { return }
+  request.httpBody = postData
+}
+```
+
+Ejecutar el session.dataTask par acrear el request:
+
+```
+let task = session.dataTask(with: request) { data, response, error in
+  
+    // ensure there is no error for this HTTP response
+    guard error == nil else {
+        print ("error: \(error!)")
+        return
+    }
+  
+    // ensure there is data returned from this HTTP response
+    guard let content = data else {
+        print("No data")
+        return
+    }
+  
+    // serialise the data / NSData object into Dictionary [String : Any]
+    guard let json = (try? JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers)) as? [String: Any] else {
+        print("Not containing JSON")
+        return
+    }
+  
+    print("gotten json response dictionary is \n \(json)")
+    // update UI using the response here
+}
+```
+
+Finalmente ejecutamos todo:
+
+```
+// execute the HTTP request
+generateBody()
+task.resume()
+```
 
 

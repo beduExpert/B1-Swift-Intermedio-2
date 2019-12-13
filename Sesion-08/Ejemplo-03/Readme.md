@@ -1,11 +1,11 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
 
-## Titulo del Ejemplo
+## Maquetación de Patron MVP 
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Migrar el proyecto de Music App al patrón MVP.
 
 #### REQUISITOS
 
@@ -13,15 +13,13 @@
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+1.- Modular la app en partes.
 
-<details>
+2.- Crear dos archivos, Models y Presenter.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+3.- Agrupar los archivos relacionados al View en un grupo.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+4.- En el View controller, identificar aquellas variables que tengan que ver con los datos, ej. un array, un request, etc..., estos los migraremos al Presenter.
 
+El proyecto queda comentado con un `TODO` para indicar que código se moverá al Presenter.
 

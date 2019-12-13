@@ -2,26 +2,30 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
 	
-## Titulo del Ejemplo 
+## Implementación de Presenter en App
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Implementar el Presenter en la App modulada del Ejemplo-03
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Ejemplo-03 
+2. Xcode 11
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Ya teniendo los módulos de la App, crear la funcionalidad para que se adapte al MVP.
+
+El presenter debe encargarse de:
+- Tener los datos
+- Hacer los requests
+- Logica de Negocio
+- Tener referencia de constantes
+- Una referencia `weak` del ViewController.
 
 <details>
-
 	<summary>Solucion</summary>
 	<p> Agrega aqui la solucion</p>
 	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
 </details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-

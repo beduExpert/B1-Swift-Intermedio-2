@@ -11,21 +11,20 @@
 #### ORGANIZACION DE LA CLASE 
 
 - Patrones MVC y MVP
+- Patrón MVP
 
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
 
-- Patrón MVP
+- Patrón MVVM
 
  	- [Ejemplo 02](Ejemplo-02)
 	- [Reto 02](Reto-02)
 
-- Patrón MVVM
+- Proyecto con Patrón MVP
 
 	- [Ejemplo 03](Ejemplo-03)
 	- [Reto 03](Reto-03)
-
-- Mas patrones.
 
 ### PostWork
 

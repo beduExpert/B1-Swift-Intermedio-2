@@ -15,7 +15,7 @@
 		1324833823A3FDA60066621E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1324833623A3FDA60066621E /* LaunchScreen.storyboard */; };
 		1324834323A4000E0066621E /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1324834123A4000E0066621E /* ImageCollectionViewCell.swift */; };
 		1324834423A4000E0066621E /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1324834223A4000E0066621E /* ImageCollectionViewCell.xib */; };
-		1324834623A400D70066621E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1324834523A400D70066621E /* ViewModel.swift */; };
+		1324834623A400D70066621E /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1324834523A400D70066621E /* Presenter.swift */; };
 		1381703A23A408C600B2BB13 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1381703923A408C600B2BB13 /* Models.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +30,7 @@
 		1324833923A3FDA60066621E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1324834123A4000E0066621E /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		1324834223A4000E0066621E /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
-		1324834523A400D70066621E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		1324834523A400D70066621E /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		1381703923A408C600B2BB13 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,7 +67,7 @@
 				1324832B23A3FDA50066621E /* AppDelegate.swift */,
 				1324832D23A3FDA50066621E /* SceneDelegate.swift */,
 				1324832F23A3FDA50066621E /* ViewController.swift */,
-				1324834523A400D70066621E /* ViewModel.swift */,
+				1324834523A400D70066621E /* Presenter.swift */,
 				1381703923A408C600B2BB13 /* Models.swift */,
 				1324834123A4000E0066621E /* ImageCollectionViewCell.swift */,
 				1324834223A4000E0066621E /* ImageCollectionViewCell.xib */,
@@ -151,7 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1324834623A400D70066621E /* ViewModel.swift in Sources */,
+				1324834623A400D70066621E /* Presenter.swift in Sources */,
 				1324833023A3FDA50066621E /* ViewController.swift in Sources */,
 				1324832C23A3FDA50066621E /* AppDelegate.swift in Sources */,
 				1381703A23A408C600B2BB13 /* Models.swift in Sources */,

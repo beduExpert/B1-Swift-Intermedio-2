@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewModel {
+class Presenter {
   
   var items: [UIImage] = []
   weak var view: ViewController?

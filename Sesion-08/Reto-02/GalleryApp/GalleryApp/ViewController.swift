@@ -8,25 +8,36 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+  
   @IBOutlet weak var collection: UICollectionView!
-  let viewModel = ViewModel()
+  var viewModel: ViewModel?
+  let idCell = "ImageCollectionViewCell"
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    collection.register(ImageCollectionViewCell.self, forCellWithReuseIdentifier: "ImageCollectionViewCell")
-    // Do any additional setup after loading the view.
+    viewModel = ViewModel(view: self)
+    collection.delegate = self
+    collection.dataSource = self
+    collection.register(UINib.init(nibName: idCell, bundle: nil), forCellWithReuseIdentifier: idCell)
+    viewModel?.download()
   }
-
+  
+  func reloadView() {
+    DispatchQueue.main.async {
+      self.collection.reloadData()
+    }
+  }
 }
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
- 
+  
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return 0
+    return viewModel?.items.count ?? 0
   }
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCollectionViewCell", for: indexPath) as? ImageCollectionViewCell else { return UICollectionViewCell() }
+    guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: idCell, for: indexPath) as? ImageCollectionViewCell else { return UICollectionViewCell()
+    }
+    cell.imageView.image = viewModel?.items[indexPath.row]
     return cell
   }
 }

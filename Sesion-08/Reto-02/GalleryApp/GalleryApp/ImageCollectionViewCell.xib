@@ -32,7 +32,7 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="148" height="148"/>
             <connections>
-                <outlet property="imageView" destination="8Wo-Md-hZR" id="Auo-c9-54i"/>
+                <outlet property="imageView" destination="8Wo-Md-hZR" id="HiZ-nh-U1A"/>
             </connections>
             <point key="canvasLocation" x="25" y="57"/>
         </collectionViewCell>

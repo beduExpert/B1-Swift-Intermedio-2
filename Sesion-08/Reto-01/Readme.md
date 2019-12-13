@@ -1,26 +1,50 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
 	
-## Titulo del Ejemplo 
+## MVP con completions
 
 ### OBJETIVO 
 
-- Lo que esperamos que el alumno aprenda 
+- Notificar al View mediante Closures creados en el Presenter. 
 
 #### REQUISITOS 
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+1. Ejemplo-01
+2. Xcode 11
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Modificación de la App con patrón MVP agregando Completions para notificar al View.
+
+Modular pequeñas funcionalidades en Clases, e implementar completions simples a manera de closures o pasando las funciones.
+
+![](0.png)
 
 <details>
+	<summary>Solución</summary>
+	<p> Agregar un nuevo elemento a la App, un **TextField**.</p>
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
+```
+	@IBOutlet weak var inputText: UITextField!
+```
+
+<p> Agregar una nueva función al Presenter, esta función tendra un completion que notificará al View de cambios. </p>
+
+```
+  func processInPresenter(input: String, completion: (String) -> Void) {
+    // Some example code...
+    completion("\(input) Has been procesed!")
+  }
+```
+
+<p> Finalmente, en el ViewController agregamos la funcionalidad del Input para que conviva con esta nueva función. </p>
+
+```
+guard let text = self.inputText.text else { return }
+presenter.processInPresenter(input: text) { (result: String) in
+	print("Processed value: \(result)")
+}
+```
+
 </details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
 

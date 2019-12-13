@@ -17,7 +17,8 @@
 
 Ya teniendo los módulos de la App, crear la funcionalidad para que se adapte al MVP.
 
-El presenter debe encargarse de:
+El `Presenter` debe encargarse de:
+
 - Tener los datos
 - Hacer los requests
 - Logica de Negocio
@@ -25,7 +26,7 @@ El presenter debe encargarse de:
 - Una referencia `weak` del ViewController.
 
 <details>
-	<summary>Solucion</summary>
+	<summary>Solución</summary>
 	<p> Agrega aqui la solucion</p>
 	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
 </details> 

@@ -15,9 +15,9 @@
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
 
-- Patrón Delegate
+- Patrón MVP
 
-	- [Ejemplo 02](Ejemplo-02)
+ 	- [Ejemplo 02](Ejemplo-02)
 	- [Reto 02](Reto-02)
 
 - Patrón MVVM

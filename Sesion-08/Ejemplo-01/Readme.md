@@ -1,27 +1,25 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
 
-## Titulo del Ejemplo
+## Ejemplo MVP
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+- Ejemplificar de la manera mas simple como implementar el patrón MVP.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Xcode 11
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Se creará una pequeña app que cuente los taps del boton. 
 
-<details>
+Se crearán las capas de Modelo, Vista y Presentador.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+Las partes que conforman este patrón:
+El código del View
+El de los modelos
+El del presenter.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
-
-
+![](0.gif)

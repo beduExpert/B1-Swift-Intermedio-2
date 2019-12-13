@@ -15,8 +15,8 @@
 		13783119238992F6001A5670 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13783118238992F6001A5670 /* Assets.xcassets */; };
 		1378311C238992F6001A5670 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1378311A238992F6001A5670 /* LaunchScreen.storyboard */; };
 		13783124238994C4001A5670 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13783123238994C4001A5670 /* Colors.swift */; };
-		139A8E14238E9D2B00862829 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 139A8E13238E9D2B00862829 /* LoginView.xib */; };
-		139A8E16238E9D3700862829 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139A8E15238E9D3700862829 /* LoginView.swift */; };
+		13832F8623A4245800A19129 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13832F8523A4245800A19129 /* Models.swift */; };
+		13832F8823A4246B00A19129 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13832F8723A4246B00A19129 /* Presenter.swift */; };
 		13B2296B238EB9E7007C8C90 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B2296A238EB9E7007C8C90 /* Enums.swift */; };
 		13B2296F238EBA3B007C8C90 /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13B2296E238EBA3B007C8C90 /* Preferences.storyboard */; };
 		13B22971238EBA7B007C8C90 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B22970238EBA7B007C8C90 /* PreferencesViewController.swift */; };
@@ -41,8 +41,8 @@
 		1378311B238992F6001A5670 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1378311D238992F6001A5670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13783123238994C4001A5670 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		139A8E13238E9D2B00862829 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LoginView.xib; path = ../LoginView.xib; sourceTree = "<group>"; };
-		139A8E15238E9D3700862829 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = ../LoginView.swift; sourceTree = "<group>"; };
+		13832F8523A4245800A19129 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		13832F8723A4246B00A19129 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		13B2296A238EB9E7007C8C90 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		13B2296E238EBA3B007C8C90 /* Preferences.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Preferences.storyboard; sourceTree = "<group>"; };
 		13B22970238EBA7B007C8C90 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
@@ -88,10 +88,10 @@
 			children = (
 				1378310F238992F4001A5670 /* AppDelegate.swift */,
 				13783111238992F4001A5670 /* SceneDelegate.swift */,
+				13832F8523A4245800A19129 /* Models.swift */,
+				13832F8723A4246B00A19129 /* Presenter.swift */,
 				13B2296D238EBA1D007C8C90 /* Resources */,
-				13B2296C238EBA13007C8C90 /* ViewControllers */,
-				13DA10F4238EB19A00DA99CC /* Cells */,
-				13DA10EB238EB00400DA99CC /* Subviews */,
+				13832F8423A4244F00A19129 /* View */,
 				13783115238992F4001A5670 /* Main.storyboard */,
 				13B2296E238EBA3B007C8C90 /* Preferences.storyboard */,
 				13783118238992F6001A5670 /* Assets.xcassets */,
@@ -99,6 +99,16 @@
 				1378311D238992F6001A5670 /* Info.plist */,
 			);
 			path = MusicApp;
+			sourceTree = "<group>";
+		};
+		13832F8423A4244F00A19129 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				13B2296C238EBA13007C8C90 /* ViewControllers */,
+				13DA10F4238EB19A00DA99CC /* Cells */,
+				13DA10EB238EB00400DA99CC /* Subviews */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		13B2296C238EBA13007C8C90 /* ViewControllers */ = {
@@ -125,8 +135,6 @@
 		13DA10EB238EB00400DA99CC /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
-				139A8E13238E9D2B00862829 /* LoginView.xib */,
-				139A8E15238E9D3700862829 /* LoginView.swift */,
 				13DA10E7238EAEE200DA99CC /* PlayerView.xib */,
 				13DA10E9238EAFBF00DA99CC /* PlayerView.swift */,
 			);
@@ -206,7 +214,6 @@
 				13783119238992F6001A5670 /* Assets.xcassets in Resources */,
 				13DA10F8238EB22B00DA99CC /* AlbumSongTableViewCell.xib in Resources */,
 				13DA10F3238EB19600DA99CC /* SongCell.xib in Resources */,
-				139A8E14238E9D2B00862829 /* LoginView.xib in Resources */,
 				13783117238992F4001A5670 /* Main.storyboard in Resources */,
 				13DA10E8238EAEE200DA99CC /* PlayerView.xib in Resources */,
 				13B2296F238EBA3B007C8C90 /* Preferences.storyboard in Resources */,
@@ -227,12 +234,13 @@
 				13DA10ED238EB07000DA99CC /* PlayerViewController.swift in Sources */,
 				13DA10EF238EB09100DA99CC /* AlbumViewController.swift in Sources */,
 				13DA10EA238EAFBF00DA99CC /* PlayerView.swift in Sources */,
-				139A8E16238E9D3700862829 /* LoginView.swift in Sources */,
 				13DA10F2238EB19600DA99CC /* SongCell.swift in Sources */,
+				13832F8823A4246B00A19129 /* Presenter.swift in Sources */,
 				13783112238992F4001A5670 /* SceneDelegate.swift in Sources */,
 				13B2296B238EB9E7007C8C90 /* Enums.swift in Sources */,
 				13B22971238EBA7B007C8C90 /* PreferencesViewController.swift in Sources */,
 				1335DCAB2398691400F10DAC /* Extensions.swift in Sources */,
+				13832F8623A4245800A19129 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

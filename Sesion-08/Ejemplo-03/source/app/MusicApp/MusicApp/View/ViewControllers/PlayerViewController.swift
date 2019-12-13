@@ -46,12 +46,12 @@ class PlayerViewController: UIViewController {
   @IBAction func showAlbumView(_ sender: Any) {
     guard let vc = storyboard?.instantiateViewController(withIdentifier: "AlbumViewController")
       as? AlbumViewController else { return }
-    //vc.modalPresentationStyle = .fullScreen //.fullScreen or .overFullScreen for transparency
     self.present(vc, animated: true, completion: nil)
   }
   
   var contador: Float = 0.0
   @IBAction func playPause(_ sender: Any) {
+    // TODO: PUEDE SER MOVIDO AL PRESENTER
     self.contador = 0
     self.progressBar.setProgress(self.contador, animated: true)
     btnPlay.performTwoStateSelection()

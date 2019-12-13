@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13111B6623A41A5500DD49B7 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13111B6523A41A5500DD49B7 /* Structs.swift */; };
 		1335DCAB2398691400F10DAC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1335DCAA2398691400F10DAC /* Extensions.swift */; };
 		13783110238992F4001A5670 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1378310F238992F4001A5670 /* AppDelegate.swift */; };
 		13783112238992F4001A5670 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13783111238992F4001A5670 /* SceneDelegate.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13111B6523A41A5500DD49B7 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
 		1335DCAA2398691400F10DAC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1378310C238992F4001A5670 /* MusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1378310F238992F4001A5670 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				13783123238994C4001A5670 /* Colors.swift */,
 				13B2296A238EB9E7007C8C90 /* Enums.swift */,
 				1335DCAA2398691400F10DAC /* Extensions.swift */,
+				13111B6523A41A5500DD49B7 /* Structs.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				139A8E16238E9D3700862829 /* LoginView.swift in Sources */,
 				13DA10F2238EB19600DA99CC /* SongCell.swift in Sources */,
 				13783112238992F4001A5670 /* SceneDelegate.swift in Sources */,
+				13111B6623A41A5500DD49B7 /* Structs.swift in Sources */,
 				13B2296B238EB9E7007C8C90 /* Enums.swift in Sources */,
 				13B22971238EBA7B007C8C90 /* PreferencesViewController.swift in Sources */,
 				1335DCAB2398691400F10DAC /* Extensions.swift in Sources */,

@@ -9,8 +9,11 @@ import UIKit
 
 class ViewModel {
   
+  var user: User?
+  
   func validate(user: String, password: String) -> Bool {
     // Validation code...
+    self.user = User(name: user, password: password)
     return true
   }
   

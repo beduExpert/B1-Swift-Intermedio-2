@@ -1,27 +1,72 @@
 `Desarrollo Mobile` > `Swift Intermedio 2`
 
 
-## Titulo del Ejemplo
+## App con arquitectura ViewModel
 
 ### OBJETIVO
 
-- Lo que esperamos que el alumno aprenda
+-  Crear una app de Login utilizando el patrón MVVM.
 
 #### REQUISITOS
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Xcode 11
 
 #### DESARROLLO
 
-Agrega las instrucciones generales del ejemplo o reto
+Crear una nueva app con patrón MVVM.
 
-<details>
+Se implementarán completion y dispatch_queues para desargar la imagen de profile.
 
-        <summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+**Notas de experto:**
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) ![imagen](https://picsum.photos/200/300)
+1.- Comenzamos en el ViewController agregando tres elementos de UI, dos textfiedls y un image view.
 
+```
+  @IBOutlet weak var input1: UITextField!
+  @IBOutlet weak var input2: UITextField!
+  @IBOutlet weak var imageView: UIImageView!
+```
+
+2.- Creamos el archivo de clase de ViewModel, ejemplo:
+
+```
+class ViewModel {
+  
+  var user: User?
+  
+  func validate(user: String, password: String) -> Bool {
+    // Validation code...
+    self.user = User(name: user, password: password)
+    return true
+  }
+  
+  func download(url: String, completion: @escaping (UIImage) -> Void) {
+    guard let url = URL(string: url) else { return }
+    let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+      if error == nil, let imageData = data {
+        completion(UIImage(data: imageData)!)
+      }
+    }
+    task.resume()
+  }
+  
+}
+```
+
+3.- Implementamos el algoritmo para descargar una imagen.
+Creamos logica utilizando closures.
+
+```
+ guard let input1 = input1.text, let input2 = input2.text else { return }
+    let result = viewModel.validate(user: input1, password: input2)
+    if result {
+      // if usr exists, download image
+      let url: String = "https:....png"
+      viewModel.download(url: url) { data in
+        DispatchQueue.main.async {
+          self.imageView.image = data
+        }
+      }
+    }
+```
 

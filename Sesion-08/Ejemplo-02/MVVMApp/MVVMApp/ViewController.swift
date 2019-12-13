@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     let result = viewModel.validate(user: input1, password: input2)
     if result {
       // if usr exists, download image
-      let url: String = "https://elysator.com/wp-content/uploads/blank-profile-picture-973460_1280-e1523978675847.png"
+      let url: String = "https:....png"
       viewModel.download(url: url) { data in
         DispatchQueue.main.async {
           self.imageView.image = data
